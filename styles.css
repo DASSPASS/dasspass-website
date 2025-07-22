@@ -10,8 +10,9 @@ body {
 nav {
   margin-bottom: 30px;
   background-color: #1273EA; /* Main Color */
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 nav a {
@@ -26,20 +27,13 @@ nav a:hover {
   color: #3EADF9; /* Secondary Color */
 }
 
-header h1 {
-  margin: 0;
-  color: #1273EA; /* Main Color */
-}
-
-header p {
-  font-style: italic;
-  margin-top: 5px;
-  color: #4E758B; /* Text color */
-}
-
 main h2 {
   color: #1273EA; /* Main Color */
   margin-bottom: 20px;
+}
+
+main h3 {
+  color: #3EADF9; /* Secondary Color */
 }
 
 ul {
@@ -50,9 +44,10 @@ ul {
 footer {
   margin-top: 40px;
   font-size: 0.9em;
-  color: #4E758B; /* Text color */
+  color: #4E758B;
   border-top: 1px solid #ddd;
   padding-top: 10px;
+  text-align: center;
 }
 
 .contact-info p {
@@ -60,11 +55,11 @@ footer {
 }
 
 a {
-  color: #1273EA; /* Main Color */
+  color: #1273EA;
 }
 
 a:hover {
-  color: #3EADF9; /* Secondary Color */
+  color: #3EADF9;
 }
 
 button.cta {
