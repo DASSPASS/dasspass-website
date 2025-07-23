@@ -8,6 +8,7 @@
   <style>
     * {
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
@@ -17,7 +18,7 @@
       color: #333;
     }
 
-    /* Navigation */
+    /* Navbar */
     nav {
       display: flex;
       justify-content: space-between;
@@ -47,10 +48,10 @@
       text-decoration: none;
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
       text-align: center;
-      padding: 80px 20px 60px;
+      padding: 100px 20px 60px;
       background-color: #f9f9f9;
     }
 
@@ -67,7 +68,7 @@
 
     .hero a.cta-button {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 14px 28px;
       background-color: #007BFF;
       color: white;
       text-decoration: none;
@@ -80,11 +81,14 @@
       background-color: #0056b3;
     }
 
-    /* Main Content */
+    /* Main */
     main {
       padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -93,22 +97,43 @@
       background-color: #f9f9f9;
     }
 
-    /* Mobile Friendly */
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      margin: 0 5px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #555;
+    }
+
+    .social-links a:hover {
+      color: #007BFF;
+    }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .nav-links {
-        margin-top: 10px;
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
       }
     }
   </style>
+
+  <!-- Font Awesome for LinkedIn icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Top Navigation -->
+  <!-- Navbar -->
   <nav>
     <div class="logo">
       <a href="index.html">
@@ -130,14 +155,19 @@
     <a class="cta-button" href="contact.html">Get Started</a>
   </section>
 
-  <!-- Main Body -->
+  <!-- Main Content -->
   <main>
     <p>Dasspass delivers innovative Mobile Value-Added Services (mVAS) that enhance real-time engagement and streamline communication. Our scalable, high-performance platform integrates seamlessly across systems, empowering businesses to accelerate growth. Trusted by organizations across industries, Dasspass drives impactful mobile-powered solutions.</p>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer with LinkedIn -->
   <footer>
     &copy; 2025 Dasspass Limited
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/dasspass1/posts/?feedView=all" target="_blank" title="Dasspass on LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
   </footer>
 
 </body>
