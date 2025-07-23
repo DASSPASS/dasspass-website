@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>dasspass  - Home</title>
+  <title>Dasspass Limited - Home</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
     }
 
+    /* Navigation */
     nav {
       display: flex;
       justify-content: space-between;
@@ -18,23 +25,62 @@
       background-color: #f2f2f2;
       padding: 10px 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
     }
 
     .nav-links a {
-      margin-right: 15px;
+      margin: 0 10px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
 
     .nav-links a:hover {
-      text-decoration: underline;
+      color: #007BFF;
     }
 
     .logo img {
       height: 40px;
     }
 
+    .logo a {
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background-color: #f9f9f9;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .hero a.cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero a.cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Main Content */
     main {
       padding: 40px 20px;
     }
@@ -46,30 +92,52 @@
       color: #777;
       background-color: #f9f9f9;
     }
+
+    /* Mobile Friendly */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Navigation with Logo -->
+  <!-- Top Navigation -->
   <nav>
-    <div class="nav-links">
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="services.html">Services</a> |
-      <a href="contact.html">Contact</a>
-    </div>
     <div class="logo">
-      <img src="logo.png" alt="Dasspass Logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Dasspass Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Dasspass Limited</h1>
+    <p>Smart Messaging for a Connected World</p>
+    <a class="cta-button" href="contact.html">Get Started</a>
+  </section>
+
+  <!-- Main Body -->
   <main>
-    <h2>Welcome to dasspass </h2>
     <p>Dasspass delivers innovative Mobile Value-Added Services (mVAS) that enhance real-time engagement and streamline communication. Our scalable, high-performance platform integrates seamlessly across systems, empowering businesses to accelerate growth. Trusted by organizations across industries, Dasspass drives impactful mobile-powered solutions.</p>
   </main>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 dasspass 
+    &copy; 2025 Dasspass Limited
   </footer>
 
 </body>
